@@ -9,7 +9,7 @@ export default function Home() {
     <div className="relative flex flex-col items-center justify-center sm:flex-row-reverse md:justify-start lg:gap-12">
       <Image
         src={bgImg2}
-        className="h-[70vh] object-cover sm:h-[100vh] sm:w-[60%] md:w-[65%]"
+        className="h-[60vh] object-cover sm:h-[100vh] sm:w-[60%] md:w-[65%]"
         alt="background-img"
       />
       <div className="flex flex-col items-center p-8 pb-0 justify-center absolute top-0 sm:static sm:pr-2 sm:pl-2 sm:h-[100vh] sm:pt-0 md:w-auto">
@@ -33,12 +33,13 @@ export default function Home() {
           width={150}
           height={150}
         />
-
-        <h2 className="text-sm font-bold">Get notified when we go live!</h2>
-        <Form />
-        <h6 className="hidden text-xs text-center sm:block">
-          © Copyrights Board Game Friends | All Rights Reserved
-        </h6>
+        <div>
+          <h2 className="text-sm font-bold">Get notified when we go live!</h2>
+          <Form />
+          <h6 className="hidden text-xs text-center sm:block">
+            © Copyrights Board Game Friends | All Rights Reserved
+          </h6>
+        </div>
       </div>
     </div>
   );
