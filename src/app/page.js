@@ -9,7 +9,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center sm:flex-row-reverse md:justify-start lg:gap-12">
       <Image
         src={bgImg2}
-        className="h-[68vh] object-cover sm:h-[100vh] sm:w-[60%] md:w-[65%]"
+        className="h-[68vh] object-cover sm:h-[100vh] sm:w-[60%] md:w-[65%] lg:mt-[-30px]"
         alt="background-img"
       />
       <div className="h-[90vh] mt-6 flex flex-col items-center p-8 pb-0 justify-between absolute top-0 sm:static sm:pr-2 sm:pl-2 sm:h-[100vh] sm:pt-0 sm:justify-center md:w-auto">
