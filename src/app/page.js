@@ -6,14 +6,14 @@ import Form from "./components/Form";
 
 export default function Home() {
   return (
-    <div className="relative flex flex-col items-center justify-center sm:flex-row-reverse md:justify-start lg:gap-12">
+    <div className="flex flex-col items-center justify-center sm:flex-row-reverse md:justify-start lg:gap-12">
       <Image
         src={bgImg2}
-        className="h-[60vh] object-cover sm:h-[100vh] sm:w-[60%] md:w-[65%]"
+        className="h-[68vh] object-cover sm:h-[100vh] sm:w-[60%] md:w-[65%]"
         alt="background-img"
       />
-      <div className="flex flex-col items-center p-8 pb-0 justify-center absolute top-0 sm:static sm:pr-2 sm:pl-2 sm:h-[100vh] sm:pt-0 md:w-auto">
-        <h1 className="text-white font-medium text-[21px]  text-center sm:text-black sm:mb-10 lg:text-[24px]">
+      <div className="h-[90vh] mt-6 flex flex-col items-center p-8 pb-0 justify-between absolute top-0 sm:static sm:pr-2 sm:pl-2 sm:h-[100vh] sm:pt-0 md:w-auto">
+        <h1 className="text-white font-medium text-[21px] pt-4 text-center sm:text-black sm:mb-10 lg:text-[24px]">
           <div className="flex flex-col gap-1">
             <span>Make</span> {""}
             <span>
@@ -33,7 +33,7 @@ export default function Home() {
           width={150}
           height={150}
         />
-        <div>
+        <div className="self-end flex flex-col items-center justify-center">
           <h2 className="text-sm font-bold">Get notified when we go live!</h2>
           <Form />
           <h6 className="hidden text-xs text-center sm:block">
