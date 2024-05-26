@@ -11,7 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`min-h-[100vh] relative ${montserrat.className}`}>
+      <body
+        className={`min-h-[100vh] relative lg:overflow-hidden ${montserrat.className}`}
+      >
         {children}
       </body>
     </html>

@@ -27,11 +27,11 @@ export default function Home() {
           </div>
         </h1>
         <Image
-          className="ml-4 sm:absolute sm:right-[17%] sm:top-[35%] md:right-[22%] lg:w-[200px] lg:h-[200px]"
+          className="ml-4 sm:absolute sm:right-[17%] sm:top-[35%] md:right-[22%] lg:w-[250px] lg:h-[250px]"
           src={logoDice}
           alt="logoDice"
-          width={150}
-          height={150}
+          width={200}
+          height={200}
         />
         <div className="self-end flex flex-col items-center justify-center">
           <h2 className="text-sm font-bold">Get notified when we go live!</h2>
