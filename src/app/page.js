@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logoDice from "../../public/logoDice2.png";
 import bgImg2 from "../../public/bg-3.png";
+
 import Form from "./components/Form";
 
 export default function Home() {
