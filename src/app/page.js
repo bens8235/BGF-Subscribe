@@ -12,7 +12,7 @@ export default function Home() {
         className="h-[68vh] object-cover sm:h-[100vh] sm:w-[60%] md:w-[65%]"
         alt="background-img"
       />
-      <div className="h-[90vh] mt-6 flex flex-col items-center p-8 pb-0 justify-between absolute top-0 sm:static sm:pr-2 sm:pl-2 sm:h-[100vh] sm:pt-0 md:w-auto">
+      <div className="h-[90vh] mt-6 flex flex-col items-center p-8 pb-0 justify-between absolute top-0 sm:static sm:pr-2 sm:pl-2 sm:h-[100vh] sm:pt-0 sm:justify-center md:w-auto">
         <h1 className="text-white font-medium text-[21px] pt-4 text-center sm:text-black sm:mb-10 lg:text-[24px]">
           <div className="flex flex-col gap-1">
             <span>Make</span> {""}
