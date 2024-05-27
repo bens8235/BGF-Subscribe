@@ -58,7 +58,7 @@ export default function Form() {
           <input type="checkbox" id="consent" name="consent" required />
           <label className=" text-xs" htmlFor="consent">
             I agree to receive a one-time email notification when the site goes
-            live. <span className="text-red-500">*</span> {""}
+            live. <span className="text-[#FF914D]">*</span> {""}
             <button
               type="button"
               className="text-[#FF914D] "
