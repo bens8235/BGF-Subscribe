@@ -15,7 +15,7 @@ const PrivacyPolicyModal = ({ isOpen, onClose }) => {
       <div className="bg-white p-6 rounded-lg shadow-lg w-11/12 md:w-1/2 lg:w-1/3 max-h-full overflow-y-auto">
         <div className="flex justify-between items-center">
           <h2 className="text-xl font-bold">Privacy Policy</h2>
-          <button onClick={onClose} className="text-xl font-bold">
+          <button onClick={onClose} className="text-3xl font-bold p-2">
             &times;
           </button>
         </div>
