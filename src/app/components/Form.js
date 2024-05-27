@@ -4,10 +4,12 @@ import { useState } from "react";
 import { submitAction } from "../lib/actions";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import PrivacyPolicyModal from "./PrivacyPolicyModal";
 
 export default function Form() {
   const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const submitActionWithEmail = submitAction.bind(null, email);
 
   async function handleSubmit(event) {
@@ -49,7 +51,22 @@ export default function Form() {
             name="email"
             onChange={handleChange}
             value={email}
+            required
           />
+        </div>
+        <div className="flex items-start gap-2 max-w-[331px] pl-2">
+          <input type="checkbox" id="consent" name="consent" required />
+          <label className=" text-xs" htmlFor="consent">
+            I agree to receive a one-time email notification when the site goes
+            live. <span className="text-red-500">*</span> {""}
+            <button
+              type="button"
+              className="text-[#FF914D] "
+              onClick={() => setIsModalOpen(true)}
+            >
+              Privacy Policy
+            </button>
+          </label>
         </div>
         <button
           className={`bg-[#78C091] text-white font-bold text-m pt-2 pb-2 pl-4 pr-4 rounded-2xl min-w-40 mb-4 cursor-pointer ${
@@ -87,6 +104,10 @@ export default function Form() {
         </button>
       </form>
       <ToastContainer hideProgressBar closeOnClick pauseOnHover draggable />
+      <PrivacyPolicyModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </div>
   );
 }
