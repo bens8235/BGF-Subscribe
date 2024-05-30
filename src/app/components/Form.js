@@ -55,7 +55,13 @@ export default function Form() {
           />
         </div>
         <div className="flex items-start gap-2 max-w-[331px] pl-2">
-          <input type="checkbox" id="consent" name="consent" required />
+          <input
+            type="checkbox"
+            id="consent"
+            name="consent"
+            required
+            className="scale-150 mt-1"
+          />
           <label className=" text-xs" htmlFor="consent">
             I agree to receive a one-time email notification when the site goes
             live. <span className="text-[#FF914D]">*</span> {""}
